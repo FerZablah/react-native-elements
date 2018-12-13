@@ -22,6 +22,7 @@ const Icon = props => {
     raised,
     containerStyle,
     reverseColor,
+    reverseSize,
     onPress,
     component: Component = onPress ? TouchableHighlight : View,
     ...attributes
