@@ -38,8 +38,8 @@ const Icon = props => {
           (reverse || raised) && styles.button,
           (reverse || raised) && {
             borderRadius: size + 4,
-            height: size * reverseSize + 4,
-            width: size * reverseSize + 4,
+            height: size * (reverseSize ? reverseSize : 1) + 4,
+            width: size * (reverseSize ? reverseSize : 1) + 4,
           },
           raised && styles.raised,
           {
